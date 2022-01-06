@@ -1,0 +1,23 @@
+GET http://localhost:3000
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJGaXJzdE5hbWUiOiJUaGVpbiBIdGV0IiwiTGFzdE5hbWUiOiJPbyIsIkVtYWlsIjoiYXVuZ3lleWludGxpbkBnbWFpbC5jb20iLCJQYXNzd29yZCI6IiQyYiQxMCRWQ1llSTRIMzV5anZ4aVpPcGZIMmRPemNtU0FSV1p3dFpIWXdKeFM1d3d2SHhobmx6VFR2TyIsIlRva2VuIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBZWFFpT2pFMk5ERTBOakU0T1RCOS5YLUZ5enRBN3Nkc3V4SzlCYXhTV1lqcXFqNFFXQjd2VVhMWjRBTm56bENrIiwiY3JlYXRlZEF0IjoiMjAyMi0wMS0wNlQwOTozODoxMC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMi0wMS0wNlQwOTozODoxMC4wMDBaIn0sImlhdCI6MTY0MTQ2NzU4MH0.24kaeJJ1FHwwcNe-g6I2eW0q-4LeTEZYl3g_IV7moz8
+
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "FirstName": "Thein Htet",
+    "LastName": "Oo",
+    "Email": "test@gmail.com",
+    "Password": "test1234"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "Email": "test@gmail.com",
+    "Password": "test1234"
+}
